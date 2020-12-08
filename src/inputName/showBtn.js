@@ -3,17 +3,18 @@ import React from 'react';
 
 class Showbtn extends React.Component{
     constructor(props){
-        super();
+        super(props);
         this.state = {
-            output: 'abc'
+
         }
+
     }
 
     render(){
         return (
             <div>
-
-                <p>Congratulation to you !!! {this.props.nameLast} </p>
+                <button onClick={this.getFullName} >Show Full Name</button>
+                <p>{this.state.fullnameout}</p>
             </div>
         )
     }
